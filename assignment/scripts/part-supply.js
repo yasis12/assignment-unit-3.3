@@ -99,5 +99,5 @@ function createdBlock(color, size) {
 let redDiv = createdBlock("red", 200);
 
 let content = document.querySelector('#blocks');
-content.innerHTML += redDiv
-content.innerHTML += createdBlock("gold", 111)
+content.innerHTML += redDiv;
+content.innerHTML += createdBlock("gold", 111);
