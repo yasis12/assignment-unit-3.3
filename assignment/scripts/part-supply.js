@@ -79,6 +79,25 @@ while (partsToShip>boxSize) {
 console.log('Boxes Filled', filledBoxes); 
 console.log('Parts Left', partsToShip);
 
+// in class example
 
+/**
+ * 
+ * @param {string} color Color of the div
+ * @param {number} size width and height of the div
+ */
 
+function createdBlock(color, size) {
+    console.log(color); 
+    return `
+    <div style="background-color: ${color}; width: ${size}px; height: ${size}px">
+    ${color} div
+    </div>
+    `   
+}
 
+let redDiv = createdBlock("red", 200);
+
+let content = document.querySelector('#blocks');
+content.innerHTML += redDiv
+content.innerHTML += createdBlock("gold", 111)
